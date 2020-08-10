@@ -1,0 +1,16 @@
+.slider__container {
+  padding: var(--spacing-normal) 0;
+  background-color: var(--gray-scale-4);
+}
+
+.slider {
+  width: 100%;
+  padding-bottom: var(--spacing-large);
+  border: 10px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+.slider img {
+  width: 100%;
+}
+/* slider-1.png */

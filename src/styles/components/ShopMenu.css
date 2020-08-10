@@ -1,0 +1,12 @@
+.shopMenu-container {
+  background-color: var(--primary-color);
+  height: var(--spacing-extra-large);
+  box-sizing: content-box;
+  border-bottom: var(--spacing-small) solid var(--secondary-color);
+}
+
+.shopMenu__nav {
+  display: flex;
+  align-items: center;
+  line-height: var(--spacing-extra-large);
+}

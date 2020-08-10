@@ -1,0 +1,54 @@
+/* --------------- contenedores de la sección */
+.bestSeller-container {
+  background-color: var(--gray-scale-3);
+  padding: var(--spacing-large) 0;
+}
+
+.bestSeller {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+/* --------------- bestSeller__article */
+.bestSeller__article {
+  flex: 1;
+  margin-right: var(--spacing-large);
+}
+
+.bestSeller__article-entry {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bestSeller__article-entry img {
+  width: 260px;
+  height: 260px;
+  margin: calc(var(--spacing-normal) * 2) 0;
+}
+
+/* --------------- bestSeller__article && bestSeller__brand*/
+.bestSeller__article-entry,
+.bestSeller__brand-entry {
+  font-size: 1.3rem;
+  color: var(--gray-scale-6);
+}
+
+.bestSeller__article-entry article:hover,
+.bestSeller__brand-entry article:hover {
+  color: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+/* --------------- bestSeller__brand */
+.bestSeller__brand {
+  min-width: 400px;
+}
+
+.bestSeller__brand-entry img {
+  width: 400px;
+  height: 260px;
+  margin: calc(var(--spacing-normal) * 2) 0;
+}

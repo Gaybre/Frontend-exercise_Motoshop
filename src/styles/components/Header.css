@@ -1,0 +1,25 @@
+.header {
+  height: calc(var(--spacing-large) + var(--spacing-small));
+  background-color: var(--primary-color);
+}
+
+.header  div {
+  display: flex;
+  align-items: center;
+  color: var(--gray-scale-1);
+}
+
+.header-container {
+  justify-content: space-between;
+}
+
+.header__logo h1 {
+  font-size: 2rem;
+  margin-right: var(--spacing-normal);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  line-height: calc(var(--spacing-large) + var(--spacing-small));
+}
