@@ -31,6 +31,7 @@
 
 .footer__socialMedia span:hover {
   box-shadow: 0 0 10px var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 .footer__socialMedia a:hover {
