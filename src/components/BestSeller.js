@@ -11,7 +11,7 @@ const BestSeller = `
       <div class="bestSeller__article-entry">
         ${ BestArticlesData.map( item => `
             <article>
-              <img src="${ item.img }" alt="${ item.name }">
+              <img src="${ item.img || item.default }" alt="${ item.name }">
               <p>${ item.name }</p>
             </article>
           `).join('')

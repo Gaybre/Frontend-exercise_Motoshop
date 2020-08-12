@@ -6,7 +6,73 @@
 }
 
 .shopMenu__nav {
+  position: relative;
   display: flex;
   align-items: center;
   line-height: var(--spacing-extra-large);
+}
+
+.shopMenu__subnav {
+  width: 100%;
+  text-align: right;
+}
+
+/* menú flotante del primer breackpoint shopMenu__nav-menu-1 */
+.shopMenu__subnav-menu-1,
+.shopMenu__subnav-menu-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  background-color: var(--primary-color);
+  border-right: 10px solid var(--secondary-color);
+  text-align: left;
+}
+
+.shopMenu__subnav-menu-1 a,
+.shopMenu__subnav-menu-2 a {
+  padding: var(--spacing-small) var(--spacing-normal);
+  border: 0;
+  font-size: 1.2rem;
+  color: var(--gray-scale-1);
+  text-decoration: none;
+  text-shadow: -2px 2px 2px var(--primary-color);
+  line-height: normal;
+}
+
+.shopMenu__subnav,
+.shopMenu__subnav-menu-1,
+.shopMenu__subnav-menu-2 {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .shopMenu__nav-2 {
+    display: none;
+  }
+  .shopMenu__subnav {
+    display: block;
+  }
+
+  .shopMenu__subnav-menu:hover ~ .shopMenu__subnav-menu-1,
+  .shopMenu__subnav-menu-1:hover {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768PX) {
+  .shopMenu__nav-1 {
+    display: none;
+  }
+
+  .shopMenu__subnav-menu:hover ~ .shopMenu__subnav-menu-2,
+  .shopMenu__subnav-menu-2:hover {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .shopMenu__subnav-menu:hover ~ .shopMenu__subnav-menu-1 {
+    display: none;
+  }
 }

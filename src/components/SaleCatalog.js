@@ -30,7 +30,7 @@ const SaleCatalog = `
               <div class="productCard">
                 <p class="productCard__name">${ item.name }</p>
                 <img 
-                  src="${ item.img }" 
+                  src="${ item.img || item.default }" 
                   alt="${ item.name }"
                   class="productCard__img"
                 >

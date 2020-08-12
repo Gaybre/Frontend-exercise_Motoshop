@@ -2,7 +2,7 @@ const Slider = `
 <section class="slider__container">
   <div class="wrapper">
     <div class="slider">
-      <img src="https://i.pinimg.com/originals/1b/40/09/1b40096e00f424a319f1e371b5504242.png" alt="not-found">
+      <img src="https://github.com/Gaybre/Frontend-exercise_Motoshop/blob/master/src/assets/images/slider-1.png?raw=true" alt="not-found">
     </div>
   </div>
 </section>
