@@ -2,6 +2,7 @@
 const path = require('path') 
 // permite trabajar con los archivos html
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 // generamos un modulo y lo exportamos
 module.exports = {
@@ -34,6 +35,10 @@ module.exports = {
           // utilizamos un loader como configuración establecida
           loader: 'babel-loader',
         }
+      },
+      {
+        test: /\.css?$/,
+        use: ["style-loader", "css-loader"]
       }
     ]
   },
@@ -50,5 +55,11 @@ module.exports = {
         filename: './index.html' 
       }
     )
+    // new CopyWebpackPlugin({
+    //   patterns: [{
+    //     from: './src/styles/styles.css',
+    //     to: './src/styles/'
+    //   }]
+    // })
   ]
 }
