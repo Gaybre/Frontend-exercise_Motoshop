@@ -1,0 +1,7 @@
+@import './global.css';
+@import './components/Header.css';
+@import './components/Slider.css';
+@import './components/ShopMenu.css';
+@import './components/BestSeller.css';
+@import './components/SaleCatalog.css';
+@import './components/Footer.css';
